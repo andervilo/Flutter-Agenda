@@ -76,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void delete  (int id, int index) async {
     AlertDialog ad = new AlertDialog(
+      title: Text("Exclusão de Contato"),
       content: Text("Excluir ${pessoas[index].nome}"),
       actions: <Widget>[
         RaisedButton(
@@ -144,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title ?? 'Agenda'),
+        backgroundColor: Colors.deepPurple,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.refresh),
